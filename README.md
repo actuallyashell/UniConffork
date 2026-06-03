@@ -1,2 +1,3 @@
-# easyconfig
-A GUI for config menus IDE
+# Universal Configure(er)
+- Designed for Hyprland.conf etc. files
+- 
