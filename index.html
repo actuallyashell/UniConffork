@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyprland Configurator</title>
@@ -11,7 +14,7 @@
     <div class="container">
         <aside class="sidebar">
             <div class="logo">
-                <h1>Hyprland</h1>
+                <h1>Hypr Conf</h1>
             </div>
             <div class="nav-item active" data-section="general">General</div>
             <div class="nav-item" data-section="monitors">Monitors</div>
@@ -22,8 +25,8 @@
             <div class="content-header">
                 <h2 id="section-title">General</h2>
                 <div>
-                    <button id="import-btn" class="btn btn-primary">Import Config</button>
-                    <button id="export-btn" class="btn btn-secondary">Export Config</button>
+                    <button id="import-btn" class="btn btn-primary">IMPORT</button>
+                    <button id="export-btn" class="btn btn-secondary">EXPORT</button>
                 </div>
                 <input type="file" id="file-input" accept=".conf" style="display: none;">
             </div>
@@ -31,7 +34,7 @@
             <div id="general-section" class="section active">
                 <div class="setting-group">
                     <h3>Import Config</h3>
-                    <p class="setting-desc">Start by importing your existing hyprland.conf file</p>
+                    <p class="setting-desc">Import your existing hyprland.conf file to get started.</p>
                 </div>
             </div>
 
