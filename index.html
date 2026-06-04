@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyprland Configurator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Hyprland</h1>
+            </div>
+            <div class="nav-item active" data-section="general">General</div>
+            <div class="nav-item" data-section="monitors">Monitors</div>
+            <div class="nav-item" data-section="keybinds">Keybinds</div>
+            <div class="nav-item" data-section="window">Window Rules</div>
+        </aside>
+        <main class="content">
+            <div class="content-header">
+                <h2 id="section-title">General</h2>
+                <div>
+                    <button id="import-btn" class="btn btn-primary">Import Config</button>
+                    <button id="export-btn" class="btn btn-secondary">Export Config</button>
+                </div>
+                <input type="file" id="file-input" accept=".conf" style="display: none;">
+            </div>
+
+            <div id="general-section" class="section active">
+                <div class="setting-group">
+                    <h3>Import Config</h3>
+                    <p class="setting-desc">Start by importing your existing hyprland.conf file</p>
+                </div>
+            </div>
+
+            <div id="monitors-section" class="section">
+                <div class="setting-group">
+                    <h3>Monitors</h3>
+                    <div id="monitors-list"></div>
+                </div>
+            </div>
+
+            <div id="keybinds-section" class="section">
+                <div class="setting-group">
+                    <h3>Keybinds</h3>
+                    <div id="keybinds-list"></div>
+                </div>
+            </div>
+
+            <div id="window-section" class="section">
+                <div class="setting-group">
+                    <h3>Window Rules</h3>
+                    <div id="window-rules-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

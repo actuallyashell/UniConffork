@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Import</title>
+</head>
+<body>
+    <button id="importBtn">Import Config</button>
+    <input type="file" id="fileInput" accept=".conf" style="display: none;">
+
+    <script>
+        console.log('Test page loaded!');
+        
+        const importBtn = document.getElementById('importBtn');
+        const fileInput = document.getElementById('fileInput');
+        
+        console.log('Test elements:', { importBtn, fileInput });
+        
+        importBtn.addEventListener('click', () => {
+            console.log('Import button clicked in test!');
+            fileInput.click();
+        });
+        
+        fileInput.addEventListener('change', (e) => {
+            console.log('Test file selected!', e.target.files[0]);
+        });
+    </script>
+</body>
+</html>
